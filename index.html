@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-color: rgb(10, 12, 27);
+      margin: 0%;
+      border: 0ch;
+      padding: 0%;
+    }
+    .container{
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+    }
+    .content{
+      height: 410px;
+      width: 1000px;
+      display: inline-flex;
+      background-color: rgb(28, 25, 56);
+      border-radius: 10px;
+    }
+    .title{
+      color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: 58px;
+    margin-right: 70px;
+    margin-left: 52px;
+    }
+    .para{
+      color: rgb(135, 132, 159);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: 28px;
+    margin-right: 92px;
+    margin-left: 52px;
+    line-height: 26px;
+    }
+    .comp{
+      height: 90px;
+    width: 349px;
+    margin-left: 51px;
+    margin-top: 35px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-around;
+    }
+    .company{
+      height: 90px;
+      width: 100px;
+      /* background-color: blue; */
+      color: rgb(135, 132, 159);
+      font-size: 10px;
+      font-family: 'Inter', sans-serif;
+    }
+    h2{
+      margin: 7px;
+      margin-left: 0;
+      font-size: 22px;
+      color: white;
+    }
+    .layer{
+      height: 410px;
+    width: 500px;
+    border-radius: 0 10px 10px 0;
+    display: inline-block;
+    position: absolute;
+    background: hsl(277, 64%, 61%);
+    opacity: .4;
+    }
+    .desc{
+      height: 410px; 
+      width: 500px; 
+      display: inline-block; 
+      background-color: rgb(28, 25, 56); 
+      border-radius: 10px 0px 0px 10px;
+    }
+    #descImage{
+      height: 410px; width: 500px; border-radius:0 10px 10px 0; float: right;
+    }
+
+    /*Media starts*/
+    @media screen and (max-width:500px) {
+      body{
+      background-color: rgb(10, 12, 27);
+      margin: 0%;
+      border: 0ch;
+      padding: 0%;
+    }
+    .container{
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+    }
+    .content{
+      height: auto;
+        width: auto;
+    display: inline-flex;
+    background-color: rgb(28, 25, 56);
+    border-radius: 10px;
+    flex-direction: column-reverse;
+    margin-top: 300px;
+    }
+    .title{
+        color: rgb(135, 132, 159);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: 28px;
+    margin-right: 62px;
+    margin-left: 62px;
+    line-height: 26px;
+    text-align: center;
+    }
+    .para{
+        color: rgb(135, 132, 159);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: 28px;
+    margin-right: 62px;
+    margin-left: 62px;
+    line-height: 26px;
+    text-align: center;
+
+    }
+    .comp{
+      margin-left: auto;
+      height: auto;
+      width: auto;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    }
+    .company{
+        height: 70px;
+    width: 100px;
+    /* background-color: blue; */
+    color: rgb(135, 132, 159);
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    text-align: center;
+    }
+    h2{
+      margin: 7px;
+      margin-left: 0;
+      font-size: 22px;
+      color: white;
+    }
+    .layer{
+        height: 270px;
+        width: 370px;
+        border-radius: 10px 10px 0 0;
+    display: inline-block;
+    position: absolute;
+    background: hsl(277, 64%, 61%);
+    opacity: .4;
+    }
+    .desc{
+      height: auto;
+        width: 370px;
+    display: inline-block;
+    background-color: rgb(28, 25, 56);
+    border-radius: 10px 0px 0px 10px;
+    }
+    .title{
+      line-height: 40px;
+        font-size: 29px;
+    font-weight: 700;
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: 58px;
+    margin-right: 36px;
+    margin-left: 36px;
+
+    color: white; 
+    font-family: 'Inter', sans-serif;
+    }
+    #descImage{
+        height: 270px;
+        width: 370px;
+        border-radius: 10px 10px 0 0;
+        float: right;
+    }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="content">
+        <div class="desc" >
+          <div class="title" >Get <span style="color: rgb(145, 83, 190);">insights</span> that help your business grow.</div>
+          <div class="para">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</div>
+          <div class="comp">
+            <div class = "company"><h2>10k+</h2> COMPANIES</div>
+            <div class = "company"><h2>314</h2> TEMPLATES</div>
+            <div class="company"><h2>12m+</h2> QUERIES</div>
+          </div>
+        </div>
+        <div class="image">        
+        <div class="layer"></div>
+        
+        <img src="images/image-header-desktop.jpg" id="descImage" alt="" >
+      </div>
+      </div>
+      
+    </div>
+  </main>
+</body>
+</html>
